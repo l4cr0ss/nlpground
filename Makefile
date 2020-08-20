@@ -25,5 +25,5 @@ nlpground:
 	@mkdir -p build
 	@mv .nlpground* modules.order nlpground.mod* nlpground.o Module.* ./build
 
-userlink:
-	gcc -g -o userlink userlink.c
+userlink: userlink.c
+	gcc -g -o userlink $@.c
